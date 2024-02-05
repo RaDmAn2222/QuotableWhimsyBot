@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 import requests
 
-Token = "6635892544:AAHlTYJpvhTP2Bk77EqV5P2pif1d6jrrcaw"
+Token = "" #insert your Bot Token here
 
 updater = Updater(Token, use_context=True)
 dispatcher = updater.dispatcher
@@ -27,9 +27,10 @@ def get_data(url="https://api.quotable.io/quotes/random"):
     response = requests.get(url)
     content = response.json()[0]['content']
     author = response.json()[0]['authorSlug']
-    return f"""{content}
-
-'{author}'"""
+    return f"""📜 Random Quote:
+"{content}"
+- {author}
+"""
 
 dispatcher.add_handler(CommandHandler('start', start))
 dispatcher.add_handler(CommandHandler('help', help))

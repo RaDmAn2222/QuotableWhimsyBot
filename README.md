@@ -1,5 +1,8 @@
 # QuotableWhimsyBot
 
+<img alt="QuotableWhimsyBot icon" src="https://github.com/RaDmAn2222/QuotableWhimsyBot/blob/master/icon.jpg" width="500"/>
+
+[Click to access the bot](https://t.me/QuotableWhimsyBot)
 
 ## Description
 
